@@ -4,13 +4,16 @@ import NhdEventForm2 from './components/NhdEventForm2';
 import NhdEventForm3 from './components/NhdEventForm3';
 import NhdEventForm4 from './components/NhdEventForm4';
 import NhdEventForm5 from './components/NhdEventForm5';
-
+import NhdRenderCondition from './components/NhdRenderCondition';
+import NhdRenderArray from './components/NhdRenderArray';
+import NhdRenderListObject from './components/NhdRenderListObject';
+import NhdRenderBT from './components/NhdRenderBT';
 class NhdApp extends Component {
 
 
 
   // Hàm xử lý nhận dữ liệu từ form student
-  NhdHandleSubmitForm = (param)=>{
+  nhdHandleSubmitForm = (param)=>{
     console.log("Student:",param);
   }
 
@@ -23,7 +26,14 @@ class NhdApp extends Component {
           <NhdEventForm2 />
           <NhdEventForm3 />
           <NhdEventForm4 />
-          <NhdEventForm5 onNhdHandleSubmit={this.NhdHandleSubmitForm}/>
+          <NhdEventForm5 onNhdHandleSubmit={this.nhdHandleSubmitForm}/>
+
+          <NhdRenderCondition />
+          <NhdRenderArray />
+
+          <NhdRenderListObject />
+
+          <NhdRenderBT />
       </div>
     );
   }
