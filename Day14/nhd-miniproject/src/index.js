@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
+import "bootstrap/dist/css/bootstrap.min.css"; // Thêm Bootstrap
 import "./index.css";
 import NhdApp from "./NhdApp";
 import reportWebVitals from "./reportWebVitals";
